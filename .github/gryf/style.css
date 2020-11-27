@@ -1,0 +1,101 @@
+body
+{
+    background-color: gray; 
+    font-family: Verdana;
+    font-size: 20px;
+    color: rgb(130, 137, 201);
+}
+ 
+h1
+{
+    font-size: 2em;
+    color: whitesmoke;
+}
+ 
+h2
+{
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+h3
+{
+    font-size: 1em;
+    color: black;
+}
+
+div.intro
+{
+    font-size: 0.8em;
+    color: black;
+}
+
+/* Nieodwiedzony link */
+a:link
+{
+    color: rgba(133, 48, 107, 0.445);
+}
+ 
+/* Odwiedzony link */
+a:visited
+{
+    color:rgb(95, 7, 88);
+}
+ 
+/* Link po najechaniu kursorem */
+a:hover
+{
+    color: rgb(230, 215, 226);
+}
+
+
+.navbar-nav li:hover
+{
+	display: inline-block;
+}
+
+.navbar
+{
+    min-height: 2em;
+    display: inline-grid;
+    grid-template-columns: 100px auto;
+    background-color: tomato;
+    margin: auto;
+    padding: auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+
+.collapse
+{
+    display: inline-grid;
+    grid-template-columns: 4fr auto;
+    margin: auto;
+    padding: auto;
+    background-color: yellow;
+    justify-items: center;
+}
+
+.navbar-nav .nav-item
+{
+    list-style: none;
+    background-color: whitesmoke;
+    display: inline-grid;
+}
+
+.form-inline
+{
+    background-color: violet;
+    justify-self: end;
+    align-self: center;
+}
+
+#services
+{
+    font-size: 0.8em;
+    color: black;
+    background-color: whitesmoke;
+}
