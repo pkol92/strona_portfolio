@@ -1,9 +1,10 @@
 body
 {
-    background-color: gray; 
-    font-family: Verdana;
+    /*background-color:  rgba(119, 126, 187, 0.9);*/
+    background: linear-gradient(#8181d8, #40BFAB);
+    font-family: 'Andika New Basic', sans-serif;
     font-size: 20px;
-    color: rgb(130, 137, 201);
+    color: black;
 }
  
 h1
@@ -24,16 +25,103 @@ h3
     color: black;
 }
 
-div.intro
+.container
 {
-    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+
+#menu
+{
+    background-color: rgb(211, 211, 248);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px;
+    justify-content: stretch;
+    align-items: center;
+    margin-left: auto;
+    padding: 1px;
+    border-radius: 20px;
+}
+
+.navbar-nav
+{   
+    list-style: none;
+    display: grid;
+    grid-template-rows: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: stretch;
+    align-self: center;
+    margin: 0px;
+}
+
+main
+{
+    background-color: rgba(245, 245, 245, 0.8);
+    margin: auto;
+    padding: 2em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+footer
+{
+    background-color: rgba(160, 253, 253, 0.7);
+    color: rgb(97, 30, 97);
+    padding: 50px;
+}
+
+footer div
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    padding: 0.5em;
+}
+
+#contact
+{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#heading
+{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    justify-items: start;
+    align-items: center;
+    font-style: italic;
+}
+
+#heading h1
+{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+a.logo img
+{
+    border-radius: 50%;
+}
+
+#intro
+{
+    font-size: 1.2em;
     color: black;
+    text-align: center;
+    padding: 1em;
 }
 
 /* Nieodwiedzony link */
 a:link
 {
-    color: rgba(133, 48, 107, 0.445);
+    color: rgba(133, 48, 107, 0.6);
+    text-decoration: none;
 }
  
 /* Odwiedzony link */
@@ -45,57 +133,92 @@ a:visited
 /* Link po najechaniu kursorem */
 a:hover
 {
-    color: rgb(230, 215, 226);
+    color: rgb(65, 24, 53);
 }
 
 
-.navbar-nav li:hover
+/*.navbar-nav li:hover
 {
-	display: inline-block;
-}
 
-.navbar
-{
-    min-height: 2em;
-    display: inline-grid;
-    grid-template-columns: 100px auto;
-    background-color: tomato;
-    margin: auto;
-    padding: auto;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-around;
-    align-content: center;
-    
 }
+*/
 
-.collapse
+div #main_services
 {
-    display: inline-grid;
-    grid-template-columns: 4fr auto;
-    margin: auto;
-    padding: auto;
-    background-color: yellow;
-    justify-items: center;
-}
-
-.navbar-nav .nav-item
-{
-    list-style: none;
     background-color: whitesmoke;
-    display: inline-grid;
+    display: grid;
+    padding: 0.5em;
+    font-size: 1.3em;
 }
 
-.form-inline
-{
-    background-color: violet;
-    justify-self: end;
-    align-self: center;
-}
-
-#services
+.services
 {
     font-size: 0.8em;
     color: black;
     background-color: whitesmoke;
+    padding-bottom: 1em;
+}
+
+.services div:nth-child(2n+1)
+{
+    background-color: rgba(218, 179, 255, 0.7);
+
+}
+
+/*.services > li
+{
+    font-size: 1.2em;
+    font-weight: 600;
+    
+} */
+
+.one_service 
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-self: center;
+    align-self: center;
+}
+
+.one_service > img
+{
+    align-self: center;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.description
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+    padding-left: 100px;
+}
+
+.description >h3
+{
+    font-size: 1.2em;
+    color: rgb(29, 41, 155);
+}
+
+#main_services >h3
+{
+    padding-left: 70px;
+}
+
+a.fb img
+{
+    position: relative;
+    top: 1em;
+    left: 5em;
+}
+
+a.fb-container img
+{
+    position: fixed;
+    top: 2em;
+    right: 0em;
 }
