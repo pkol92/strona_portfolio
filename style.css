@@ -150,20 +150,20 @@ main
     padding: 1em;
 }
 
-/* Nieodwiedzony link */
+/*unvisited link*/
 a:link
 {
     color: rgba(133, 48, 107, 0.6);
     text-decoration: none;
 }
  
-/* Odwiedzony link */
+/* visited link */
 a:visited
 {
     color:rgb(95, 7, 88);
 }
  
-/* Link po najechaniu kursorem */
+/*Link on hovering over*/
 a:hover
 {
     color: rgb(65, 24, 53);
@@ -314,18 +314,13 @@ footer
     place-self: center center;
 }
 
-.footer li
-{
-    display: grid;
-}
-
 #contact
 {
     font-size: 1.2em;
     font-weight: 700;
 }
 
-/*komputer*/
+/*computer*/
 @media (min-width: 1100px) 
 {
     container {width:1050px;}
@@ -334,7 +329,7 @@ footer
     footer {width: 90%;}
 }
     
-/*tablet orientacja pozioma*/
+/*tablet landscape orientation*/
 @media (max-width: 1100px) and (min-width: 1000px) 
 {
     container {width:950px;}
@@ -358,7 +353,7 @@ footer
     footer {width: 80%;}
 }    
 
-/*tablet orientacja pionowa*/
+/*tablet vertical orientation*/
 @media (max-width: 1000px) and (min-width: 800px) 
 {
     container {width:750px;}
@@ -398,7 +393,7 @@ footer
     }
 }
 
-/*telefon orientacja pozioma*/
+/*phone landscape orientation*/
 @media (max-width: 800px) and (min-width: 500px) 
 {
     container {width:450px;}
@@ -447,7 +442,7 @@ footer
     }
 }
 
-/*telefon orientacja pionowa*/
+/*phone vertical orientation*/
 @media (max-width: 500px) 
 {
     container {width:90%;}
