@@ -1,3 +1,8 @@
+:root 
+{
+    --color1: whitesmoke;
+}
+
 * 
 {
     padding:0;
@@ -20,13 +25,13 @@ body
 h1
 {
     font-size: 2em;
-    color: whitesmoke;
+    color: var(--color1);
 }
  
 h2
 {
     font-size: 1.5em;
-    color: whitesmoke;
+    color: var(--color1);
 }
 
 h3
@@ -39,6 +44,8 @@ h3
 {
     width:1050px;
     margin:0 auto;
+    display: grid;
+    justify-content: center;
 }
 
 header
@@ -140,6 +147,8 @@ main
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     row-gap: 2em;
+    display: grid;
+    justify-content: center;
 }
 
 #intro
@@ -163,7 +172,7 @@ a:visited
     color:rgb(95, 7, 88);
 }
  
-/*Link on hovering over*/
+/*link on hovering over*/
 a:hover
 {
     color: rgb(65, 24, 53);
@@ -171,7 +180,7 @@ a:hover
 
 div #main_services, #galery
 {
-    background-color: whitesmoke;
+    background-color: var(--color1);
     display: grid;
     padding: 0.5em;
     font-size: 1.3em;
@@ -220,6 +229,7 @@ div #main_services, #galery
     align-self: stretch;
     padding-left: 5em;
     justify-self: stretch;
+    padding-right: 1em;
 }
 
 .description > h3
@@ -295,7 +305,9 @@ footer
     background-color: rgba(160, 253, 253, 0.7);
     color: rgb(97, 30, 97);
     padding: 2em;
-    margin:auto;
+    display: grid;
+    justify-content: center;
+    margin: auto;
 }
 
 .footer
@@ -316,12 +328,16 @@ footer
 
 #contact
 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
     font-size: 1.2em;
     font-weight: 700;
+    padding-bottom: 1em;
 }
 
 /*computer*/
-@media (min-width: 1100px) 
+@media only screen and (min-width: 1100px) 
 {
     container {width:1050px;}
     header {width:100%;}  
@@ -330,7 +346,7 @@ footer
 }
     
 /*tablet landscape orientation*/
-@media (max-width: 1100px) and (min-width: 1000px) 
+@media only screen and (max-width: 1100px) and (min-width: 1000px) 
 {
     container {width:950px;}
     header {width:100%;}
@@ -354,7 +370,7 @@ footer
 }    
 
 /*tablet vertical orientation*/
-@media (max-width: 1000px) and (min-width: 800px) 
+@media only screen and (max-width: 1000px) and (min-width: 800px) 
 {
     container {width:750px;}
     header {width:100%;}
@@ -378,12 +394,6 @@ footer
 
     main {width:80%;}
 
-    .photo {grid-template-columns: repeat(3, 1fr);}    
-
-    footer {width: 80%;}
-
-    .footer form {padding-left: 1em;}
-    
     #main_services > h3, #galery > h3 
     {
         display: grid;
@@ -391,10 +401,22 @@ footer
         justify-self: center;
         padding: 0px;
     }
+
+    .photo {grid-template-columns: repeat(3, 1fr);}    
+
+    footer {width: 80%;}
+
+    .footer form {padding-left: 1em;}
+    a.fb img
+    {
+        top: -1.5em;
+        left: 13em;
+    }
+    
 }
 
 /*phone landscape orientation*/
-@media (max-width: 800px) and (min-width: 500px) 
+@media only screen and (max-width: 800px) and (min-width: 500px) 
 {
     container {width:450px;}
     header {width: 100%}
@@ -417,19 +439,6 @@ footer
     }
 
     main {width:80%;}
-    footer {width: 80%;}
-
-    .footer
-    {
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-    }
-
-    a.fb img
-    {
-        top: -1.5em;
-        left: 15em;
-    }
 
     .photo {grid-template-columns: 1fr 1fr;}  
 
@@ -440,19 +449,33 @@ footer
         justify-self: center;
         padding: 0px;
     }
+
+    footer {width: 80%;}
+
+    .footer form {padding-left: 0em;}
+
+    .footer
+    {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+
+    a.fb img
+    {
+        top: -1.5em;
+        left: 14em;
+    }
+
 }
 
 /*phone vertical orientation*/
-@media (max-width: 500px) 
+@media only screen and (max-width: 500px) 
 {
-    container {width:90%;}
+    container {width:70%;}
 
-    header {width: 90%;}
+    header {width: 70%;}
 
-    #intro 
-    {
-        font-size: 0.8em;
-    }
+    #intro {font-size: 0.8em;}
 
     #menu
     {
@@ -487,32 +510,17 @@ footer
         row-gap: 1em;
     }
 
+    .one_service > img {width: 200px;}
+
     .description
     {
         grid-template-columns: 1fr;
         padding: auto;
     }
 
-    main {width:90%;}
+    main {width:70%;}
 
-    footer {width: 90%;}
-
-    .footer
-    {
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-    }
-
-    a.fb img
-    {
-        top: -1.5em;
-        left: 15em;
-    }
-
-    .photo
-    {
-        grid-template-columns: 1fr 1fr;
-    } 
+    .photo {grid-template-columns: 1fr;} 
 
     #main_services > h3, #galery > h3 
     {
@@ -521,4 +529,22 @@ footer
         justify-self: center;
         padding: 0px;
     }
+
+    footer {width: 70%;}
+
+    .footer form {padding-left: 0em;}
+
+    .footer
+    {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        margin-left: 1em;
+    }
+
+    a.fb img
+    {
+        top: -1.5em;
+        left: 10em;
+    }
+
 }
