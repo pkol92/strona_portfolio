@@ -5,6 +5,7 @@
 
 Projekt zawiera stworzą stronę - wizytówkę, z wykorzystaniem HTML oraz CSS. 
 Jest to strona Fizjoterapii Gryf, która wiążę się z moją edukacją zawodową. Celem było stworzenie strony, która będzie informowała potencjalnego klienta o wykonywanych usługach oraz przekazywała najważniejsze informacje.
+Link do strony: https://pkol92.github.io/strona_portfolio/strona.html
 
 ##### W projekcie zaprezentowano praktyczną znajomość poniższych zagadnień związanych z HTML & CSS:
 - Box-model
